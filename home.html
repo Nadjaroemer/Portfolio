@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>nrh portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/9fb57291c6.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Lexend+Tera&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/boilerplate.css">
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body id="home">
+        <div id="wrapper">
+            <!-----------MENU_POP_UP_BOX---------->
+            <div id="lightbox_mask">
+                <div class="logo">
+                    <p>.nrh</p>
+                </div>
+
+                <div id="cross">
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <nav id="lightbox_nav">
+                    <ul>
+                        <li><a href="index.html" class="lightbox_a">Start</a></li>
+                        <li><a href="home.html" class="lightbox_a_color">Home</a></li>
+                        <li><a href="works.html" class="lightbox_a">Works</a></li>
+                        <li><a href="about.html" class="lightbox_a">About</a></li>
+                        <li><a href="blog.html" class="lightbox_a">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--------MENU_POP_UP_BOX_END--------->
+            <header>
+                <div class="logo">
+                    <p>.nrh</p>
+                </div>
+
+                <div id="burger">
+                    <i class="fas fa-bars" ></i>
+                </div>
+            </header>
+            <main>
+                
+                <section class="name_section">
+                    <h1 class="home_h1">My <br> Portfolio</h1>
+                    <div class="home_div">
+                        <p>Hello, my name is Nadja.</p>
+                        <p>I’m about to be a front-end developer 
+                            based in Copenhagen.</p>
+                        <p>I enjoy working with unique businesses worldwide.</p>
+                    </div>
+                    <div>
+                        <a href="about.html" class="cool-link">Learn more</a>
+                    </div>
+                </section>
+                <section class="home_section_one">
+                    <div>
+                        <h2>Skills</h2>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>HTML</h3>
+                            <progress class="file" value="80" max="100"> 80% </progress>
+                        </div>
+                        <div>
+                            <h3>CSS</h3>
+                            <progress class="file" value="60" max="100"> 60% </progress>
+                        </div>
+                        <div>
+                            <h3>JavaScript</h3>
+                            <progress class="file" value="45" max="100"> 45% </progress>
+                        </div>
+                        <div>
+                            <h3>jQuery</h3>
+                            <progress class="file" value="35" max="100"> 35% </progress>
+                        </div>
+                        <div>
+                            <h3>Angular</h3>
+                            <progress id="file" value="10" max="100"> 10% </progress>
+                        </div>
+                    </div>
+                </section>
+                <section class="formular_section">
+                    <div>
+                        <h2>Contact me for a hire, <br>collab or chat.</h2>
+                    </div>
+                    <div id="formular">
+                        <form id="form" action="#" method="post">
+                            <div class="name">
+                                <label for="name">Name</label>
+                                <input type="text" name="name">
+                            </div>
+                            <div class="email">
+                                <label for="email">Email</label>
+                                <input type="text" name="email">
+                            </div>
+                            <div class="message">
+                                <label for="message">Message</label>
+                                <textarea name="comment" form="userform" ></textarea>
+                            </div>
+                            <div id="besked"></div>
+                            <div>
+                                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div>
+                    <nav>
+                        <ul id="footer_ul">
+                            <li><a href="http://www.instagram.com" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/Nadjaroemer" target="_blank">GitHub</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <p id="footer_nrh">.nrh</p>
+                    <p class="footer_name">Nadja Rømer Hesselbjerg</p>
+                </div>
+                <p>&copy:2020. All rights reserved.</p>
+            </footer>
+        </div><!--End of wrapper-->
+        <script src="scripts/pop_up_nav.js"></script>
+        <script src="scripts/formular.js"></script>
+    </body>
+</html>

@@ -1,0 +1,136 @@
+/*************HOME*******************/
+#home h1 {
+    font-family: 'Lato', sans-serif;
+}
+#home main p {
+    font-size: 36px;
+}
+#home main a {
+    font-size: 24px;
+    font-family: 'Lexend Tera', sans-serif;
+    text-decoration: none;
+    color: #FF6F61;
+}
+#home .logo {
+    margin-left: 2vw;
+}
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+.cool-link:hover::after {
+    width: 100%;
+}
+#home h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+}
+#home h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    margin: 2vh;
+}
+.name_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 40px;
+    margin: 17vh 16vw;
+}
+.name_section h1 {
+    margin-bottom: 10vh;
+}
+.home_div {
+    place-self: center;
+}
+.home_section_one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-top: 20vh;
+    padding-bottom: 40vh;
+}
+.home_section_one div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+}
+progress[value] {
+    border:none;
+    width: 440px;
+    height: 20px;
+    border-radius: 20px;
+	background:black; /* mozilla background */
+	color: #FF6F61; /* IE and edge value */
+
+	/* resets */
+	-webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+progress[value]::-webkit-progress-bar{
+    background:black;
+    border-radius: 20px;
+} /* webkit background */
+progress[value]::-webkit-progress-value{
+    background:#FF6F61;
+    border-radius: 20px;
+} /* webkit value */
+
+progress[value]::-moz-progress-bar{
+    background:#FF6F61;
+    border-radius: 20px;
+}
+/*****FORMULAR*****/
+form {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    border: none;
+    margin-right: 10vw;
+}
+label {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+input, textarea {
+    border: none;
+    background-color: #DDDDDD;
+}
+.name, .email, .message {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black; 
+}
+textarea {
+    resize: none;
+}
+.email, .message {
+    margin-top: 2vh;
+}
+button {
+    background-color: black;
+    border-radius: 5vw;
+    width: 5vw;
+    height: 10vh;
+    border: none;
+}
+button i {
+    transform: rotate(-40deg);
+    color: white;
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 320px){
+   .home_section_one {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+   }
+}

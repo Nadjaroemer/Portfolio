@@ -1,0 +1,40 @@
+.aboutMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    margin: 19vh 9vw;
+    grid-gap: 20px;
+    font-size: 36px;
+    line-height: 50px;
+}
+#about .logo {
+    margin-left: 3vw;
+}
+#about h1 {
+    padding-left: 9vw;
+    padding-top: 26vh;
+}
+#about main div:first-child {
+    border-right: 1px solid black;
+    padding-right: 2vw;
+    grid-area: 1 / 1 / 2 / 2;
+}
+#about main div:nth-child(2) {
+    padding-right: 2vw;
+}
+#read_more_knap, #read_less_knap {
+    color: #FF6F61;
+    font-weight: 300;
+    padding-top: 1em;
+    cursor: pointer;
+}
+#about main div>p:nth-child(2) {
+    padding-top: 1em;
+}
+.aboutMain p {
+    font-size: 24px;
+}
+.jens {
+    color: #FF6F61;
+    text-decoration: none;
+}
